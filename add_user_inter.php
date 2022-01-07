@@ -29,6 +29,23 @@
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
+                <?php
+                   
+
+                    if (isset($_GET["message"])) {
+                        echo "<br/>";
+                        echo "<div class='alert alert-success alert-dismissible mb-2' role='alert'>
+                                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>×</span>
+                                            </button>
+                                            <div class='d-flex align-items-center'>
+                                            <i class='bx bx-like'></i>
+                                            <span>
+                                            User Details successfully added to the database.
+                                            </span>
+                                            </div>
+                                        </div>";
+                    }
+                    ?>
 
                 <div class="page-header">
                     <nav class="breadcrumb-one" aria-label="breadcrumb">
