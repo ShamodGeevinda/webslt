@@ -29,7 +29,6 @@ if ($result->num_rows > 0) { // check for existing of the query
 
     if ($mysqli->query($sql) === true) {
         header("Location: http://localhost/slt.lk/add_user_inter.php?message=success");
-
         exit();
     } else {
         echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
@@ -39,3 +38,7 @@ if ($result->num_rows > 0) { // check for existing of the query
 
 // Close connection
 $mysqli->close();
+
+?>
+
+// end
