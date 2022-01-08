@@ -126,6 +126,58 @@
 
                     <!--  END FORM AREA  -->
 
+                    <br/>
+                    <h3>Registered User</h3>
+                    <!-- Table with outer spacing -->
+                    <div class="table-responsive">
+                        <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
+                            <thead >
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Emp No</th>
+                                    <th>Type</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Contact No</th>
+                                    <th>Email</th>
+                                    
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                require_once 'config.php';
+                                $sql = "SELECT * FROM employee ORDER BY id desc";
+                                $result = $mysqli->query($sql);
+                                if ($result->num_rows > 0) {
+                                    // output data of each row
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo '<tr>
+                                                        <td>' . $row["id"] . ' </td>
+                                                        <td>' . $row["emp_no"] . ' </td>
+                                                        <td>' . $row["type"] . ' </td>
+                                                        <td>' . $row["first_name"] . ' </td>
+                                                        <td>' . $row["last_name"] . ' </td>
+                                                        <td>' . $row["contact_no"] . ' </td>
+                                                        <td>' . $row["email"] . ' </td>
+                                                        
+                                                        
+                                                     </tr>';
+                                    }
+                                } else {
+                                    echo "0 results";
+                                }
+                                
+                                ?>     
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
             </div>
             <?php include 'footer.php'; ?>
         </div>
