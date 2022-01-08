@@ -1,3 +1,8 @@
+<script>
+window.onload = function() {
+  document.getElementById("validationDefault01").focus();
+};
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
