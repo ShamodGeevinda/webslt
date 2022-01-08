@@ -12,21 +12,30 @@ $contact_no = $mysqli->real_escape_string($_REQUEST['contact_no']);
 $email = $mysqli->real_escape_string($_REQUEST['email']);
 $username = $mysqli->real_escape_string($_REQUEST['username']);
 $password = $mysqli->real_escape_string($_REQUEST['password']);
-$status = $mysqli->real_escape_string($_REQUEST['status']);
+
 
 
 
 // Attempt insert query execution
-$sql = "INSERT INTO employee (emp_no, type, first_name, last_name, contact_no, email, username, password) VALUES ('$emp_no', '$type', '$first_name', '$last_name','$contact_no','$email','$username','$password')";
+$sql1 = "SELECT emp_no FROM employee WHERE emp_no = $emp_no";
 
-if ($mysqli->query($sql) === true) {
-    header("Location: http://localhost/slt.lk/add_user_inter.php?message=success");
-
+$result = $mysqli->query($sql1);
+if ($result->num_rows > 0) { // check for existing of the query
+    header("Location: http://localhost/slt.lk/add_user_inter.php?message=unsuccess");
     exit();
 } else {
-    echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+    $sql = "INSERT INTO employee (emp_no, type, first_name, last_name, contact_no, email, username, password)
+ VALUES ('$emp_no', '$type', '$first_name', '$last_name','$contact_no','$email','$username','$password')";
+
+    if ($mysqli->query($sql) === true) {
+        header("Location: http://localhost/slt.lk/add_user_inter.php?message=success");
+
+        exit();
+    } else {
+        echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+    }
 }
+
 
 // Close connection
 $mysqli->close();
-?>

@@ -35,9 +35,9 @@ window.onload = function() {
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
                 <?php
-                   
+                   if (isset($_GET["message"])){
 
-                    if (isset($_GET["message"])) {
+                    if ($_GET["message"]=="success") {
                         echo "<br/>";
                         echo "<div class='alert alert-success alert-dismissible mb-2' role='alert'>
                                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>×</span>
@@ -49,6 +49,19 @@ window.onload = function() {
                                             </span>
                                             </div>
                                         </div>";
+                    }else if($_GET["message"]=="unsuccess") {
+                        echo "<br/>";
+                        echo "<div class='alert alert-warning alert-dismissible mb-2' role='alert'>
+                                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>×</span>
+                                            </button>
+                                            <div class='d-flex align-items-center'>
+                                            <i class='bx bx-like'></i>
+                                            <span>
+                                            values already in the the database.
+                                            </span>
+                                            </div>
+                                        </div>";
+                    }
                     }
                     ?>
 
