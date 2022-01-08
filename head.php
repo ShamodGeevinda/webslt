@@ -14,7 +14,10 @@
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" class="dashboard-sales" />
+    <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" class="dashboard-analytics" />
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/custom_dt_html5.css">
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/dt-global_style.css">
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
 </head>
