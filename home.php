@@ -1,3 +1,4 @@
+<?php include './sessionstart.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,13 +8,17 @@
 
 <body class=" dashboard-sales">
     <!-- BEGIN LOADER -->
-    <div id="load_screen"> <div class="loader"> <div class="loader-content">
-        <div class="spinner-grow align-self-center"></div>
-    </div></div></div>
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
     <!--  END LOADER -->
 
     <!--  BEGIN NAVBAR  -->
-    <?php include 'header.php';?>
+    <?php include 'header.php'; ?>
     <!--  END NAVBAR  -->
 
     <!--  BEGIN MAIN CONTAINER  -->
@@ -25,7 +30,7 @@
         <!--  BEGIN SIDEBAR  -->
         <?php include 'navbar.php'; ?>
         <!--  END SIDEBAR  -->
-        
+
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
@@ -48,7 +53,11 @@
                                 <div class="task-action">
                                     <div class="dropdown">
                                         <a class="dropdown-toggle" href="#" role="button" id="pendingTask" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                                <circle cx="12" cy="12" r="1"></circle>
+                                                <circle cx="19" cy="12" r="1"></circle>
+                                                <circle cx="5" cy="12" r="1"></circle>
+                                            </svg>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask" style="will-change: transform;">
                                             <a class="dropdown-item" href="javascript:void(0);">Weekly</a>
@@ -81,7 +90,11 @@
                             <div class="widget-content">
                                 <div class="w-numeric-value">
                                     <div class="w-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                                            <circle cx="9" cy="21" r="1"></circle>
+                                            <circle cx="20" cy="21" r="1"></circle>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                        </svg>
                                     </div>
                                     <div class="w-content">
                                         <span class="w-value">3,192</span>
@@ -104,7 +117,10 @@
                                         <span class="w-numeric-title">Go to columns for details.</span>
                                     </div>
                                     <div class="w-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="w-chart">
@@ -122,7 +138,11 @@
                                 <div class="task-action">
                                     <div class="dropdown">
                                         <a class="dropdown-toggle" href="#" role="button" id="pendingTask" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                                <circle cx="12" cy="12" r="1"></circle>
+                                                <circle cx="19" cy="12" r="1"></circle>
+                                                <circle cx="5" cy="12" r="1"></circle>
+                                            </svg>
                                         </a>
 
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask" style="will-change: transform;">
@@ -140,10 +160,14 @@
 
                                     <div class="summary-list">
                                         <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+                                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                            </svg>
                                         </div>
                                         <div class="w-summary-details">
-                                            
+
                                             <div class="w-summary-info">
                                                 <h6>Income</h6>
                                                 <p class="summary-count">$92,600</p>
@@ -161,10 +185,13 @@
 
                                     <div class="summary-list">
                                         <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag">
+                                                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                                <line x1="7" y1="7" x2="7" y2="7"></line>
+                                            </svg>
                                         </div>
                                         <div class="w-summary-details">
-                                            
+
                                             <div class="w-summary-info">
                                                 <h6>Profit</h6>
                                                 <p class="summary-count">$37,515</p>
@@ -182,10 +209,13 @@
 
                                     <div class="summary-list">
                                         <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
+                                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                                            </svg>
                                         </div>
                                         <div class="w-summary-details">
-                                            
+
                                             <div class="w-summary-info">
                                                 <h6>Expenses</h6>
                                                 <p class="summary-count">$55,085</p>
@@ -200,9 +230,9 @@
                                         </div>
 
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -214,7 +244,11 @@
                                 <div class="task-action">
                                     <div class="dropdown">
                                         <a class="dropdown-toggle" href="#" role="button" id="pendingTask" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                                <circle cx="12" cy="12" r="1"></circle>
+                                                <circle cx="19" cy="12" r="1"></circle>
+                                                <circle cx="5" cy="12" r="1"></circle>
+                                            </svg>
                                         </a>
 
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask" style="will-change: transform;">
@@ -232,7 +266,10 @@
                                         <div class="t-company-name">
                                             <div class="t-icon">
                                                 <div class="icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="t-name">
@@ -291,7 +328,10 @@
                                         <div class="t-company-name">
                                             <div class="t-icon">
                                                 <div class="icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="t-name">
@@ -345,9 +385,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                                
+
+
+
                             </div>
                         </div>
                     </div>
@@ -530,7 +570,10 @@
                                 </div>
 
                                 <div class="tm-action-btn">
-                                    <button class="btn"><span>View All</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                    <button class="btn"><span>View All</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg></button>
                                 </div>
                             </div>
                         </div>
@@ -546,7 +589,10 @@
                                         <span><img src="assets/img/profile-32.jpg" alt="admin-profile" class="img-fluid"> Alan Green</span>
                                     </div>
                                     <div class="add">
-                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            </svg></span>
                                     </div>
                                 </div>
                                 <div class="wallet-balance">
@@ -558,12 +604,16 @@
                             <div class="widget-amount">
 
                                 <div class="w-a-info funds-received">
-                                    <span>Received <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+                                    <span>Received <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+                                            <polyline points="18 15 12 9 6 15"></polyline>
+                                        </svg></span>
                                     <p>$97.99</p>
                                 </div>
 
                                 <div class="w-a-info funds-spent">
-                                    <span>Spent <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                                    <span>Spent <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg></span>
                                     <p>$53.00</p>
                                 </div>
                             </div>
@@ -611,56 +661,126 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th><div class="th-content">Customer</div></th>
-                                                <th><div class="th-content">Product</div></th>
-                                                <th><div class="th-content">Invoice</div></th>
-                                                <th><div class="th-content th-heading">Price</div></th>
-                                                <th><div class="th-content">Status</div></th>
+                                                <th>
+                                                    <div class="th-content">Customer</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content">Product</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content">Invoice</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Price</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content">Status</div>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><div class="td-content customer-name"><img src="assets/img/profile-13.jpg" alt="avatar"><span>Luke Ivory</span></div></td>
-                                                <td><div class="td-content product-brand text-primary">Headphone</div></td>
-                                                <td><div class="td-content product-invoice">#46894</div></td>
-                                                <td><div class="td-content pricing"><span class="">$56.07</span></div></td>
-                                                <td><div class="td-content"><span class="badge outline-badge-success">Paid</span></div></td>
+                                                <td>
+                                                    <div class="td-content customer-name"><img src="assets/img/profile-13.jpg" alt="avatar"><span>Luke Ivory</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-brand text-primary">Headphone</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-invoice">#46894</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content pricing"><span class="">$56.07</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="badge outline-badge-success">Paid</span></div>
+                                                </td>
                                             </tr>
-                                            
+
                                             <tr>
-                                                <td><div class="td-content customer-name"><img src="assets/img/profile-7.jpg" alt="avatar"><span>Andy King</span></div></td>
-                                                <td><div class="td-content product-brand text-warning">Nike Sport</div></td>
-                                                <td><div class="td-content product-invoice">#76894</div></td>
-                                                <td><div class="td-content pricing"><span class="">$88.00</span></div></td>
-                                                <td><div class="td-content"><span class="badge outline-badge-primary">Shipped</span></div></td>
+                                                <td>
+                                                    <div class="td-content customer-name"><img src="assets/img/profile-7.jpg" alt="avatar"><span>Andy King</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-brand text-warning">Nike Sport</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-invoice">#76894</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content pricing"><span class="">$88.00</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="badge outline-badge-primary">Shipped</span></div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><div class="td-content customer-name"><img src="assets/img/profile-10.jpg" alt="avatar"><span>Laurie Fox</span></div></td>
-                                                <td><div class="td-content product-brand text-danger">Sunglasses</div></td>
-                                                <td><div class="td-content product-invoice">#66894</div></td>
-                                                <td><div class="td-content pricing"><span class="">$126.04</span></div></td>
-                                                <td><div class="td-content"><span class="badge outline-badge-success">Paid</span></div></td>
-                                            </tr>                                            
-                                            <tr>
-                                                <td><div class="td-content customer-name"><img src="assets/img/profile-5.jpg" alt="avatar"><span>Ryan Collins</span></div></td>
-                                                <td><div class="td-content product-brand text-warning">Sport</div></td>
-                                                <td><div class="td-content product-invoice">#89891</div></td>
-                                                <td><div class="td-content pricing"><span class="">$108.09</span></div></td>
-                                                <td><div class="td-content"><span class="badge outline-badge-primary">Shipped</span></div></td>
+                                                <td>
+                                                    <div class="td-content customer-name"><img src="assets/img/profile-10.jpg" alt="avatar"><span>Laurie Fox</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-brand text-danger">Sunglasses</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-invoice">#66894</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content pricing"><span class="">$126.04</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="badge outline-badge-success">Paid</span></div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><div class="td-content customer-name"><img src="assets/img/profile-4.jpg" alt="avatar"><span>Irene Collins</span></div></td>
-                                                <td><div class="td-content product-brand text-primary">Speakers</div></td>
-                                                <td><div class="td-content product-invoice">#75844</div></td>
-                                                <td><div class="td-content pricing"><span class="">$84.00</span></div></td>
-                                                <td><div class="td-content"><span class="badge outline-badge-danger">Pending</span></div></td>
+                                                <td>
+                                                    <div class="td-content customer-name"><img src="assets/img/profile-5.jpg" alt="avatar"><span>Ryan Collins</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-brand text-warning">Sport</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-invoice">#89891</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content pricing"><span class="">$108.09</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="badge outline-badge-primary">Shipped</span></div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><div class="td-content customer-name"><img src="assets/img/profile-11.jpg" alt="avatar"><span>Sonia Shaw</span></div></td>
-                                                <td><div class="td-content product-brand text-danger">Watch</div></td>
-                                                <td><div class="td-content product-invoice">#76844</div></td>
-                                                <td><div class="td-content pricing"><span class="">$110.00</span></div></td>
-                                                <td><div class="td-content"><span class="badge outline-badge-success">Paid</span></div></td>
+                                                <td>
+                                                    <div class="td-content customer-name"><img src="assets/img/profile-4.jpg" alt="avatar"><span>Irene Collins</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-brand text-primary">Speakers</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-invoice">#75844</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content pricing"><span class="">$84.00</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="badge outline-badge-danger">Pending</span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content customer-name"><img src="assets/img/profile-11.jpg" alt="avatar"><span>Sonia Shaw</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-brand text-danger">Watch</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content product-invoice">#76844</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content pricing"><span class="">$110.00</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="badge outline-badge-success">Paid</span></div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -668,7 +788,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
                         <div class="widget widget-table-three">
@@ -682,48 +802,148 @@
                                     <table class="table table-scroll">
                                         <thead>
                                             <tr>
-                                                <th><div class="th-content">Product</div></th>
-                                                <th><div class="th-content th-heading">Price</div></th>
-                                                <th><div class="th-content th-heading">Discount</div></th>
-                                                <th><div class="th-content">Sold</div></th>
-                                                <th><div class="th-content">Source</div></th>
+                                                <th>
+                                                    <div class="th-content">Product</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Price</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Discount</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content">Sold</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content">Source</div>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><div class="td-content product-name"><img src="assets/img/product-headphones.jpg" alt="product"><div class="align-self-center"><p class="prd-name">Headphone</p><p class="prd-category text-primary">Digital</p></div></div></td>
-                                                <td><div class="td-content"><span class="pricing">$168.09</span></div></td>
-                                                <td><div class="td-content"><span class="discount-pricing">$60.09</span></div></td>
-                                                <td><div class="td-content">170</div></td>
-                                                <td><div class="td-content"><a href="javascript:void(0);" class="text-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg> Direct</a></div></td>
+                                                <td>
+                                                    <div class="td-content product-name"><img src="assets/img/product-headphones.jpg" alt="product">
+                                                        <div class="align-self-center">
+                                                            <p class="prd-name">Headphone</p>
+                                                            <p class="prd-category text-primary">Digital</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="pricing">$168.09</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="discount-pricing">$60.09</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">170</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><a href="javascript:void(0);" class="text-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
+                                                                <polyline points="13 17 18 12 13 7"></polyline>
+                                                                <polyline points="6 17 11 12 6 7"></polyline>
+                                                            </svg> Direct</a></div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><div class="td-content product-name"><img src="assets/img/product-shoes.jpg" alt="product"><div class="align-self-center"><p class="prd-name">Shoes</p><p class="prd-category text-warning">Faishon</p></div></div></td>
-                                                <td><div class="td-content"><span class="pricing">$108.09</span></div></td>
-                                                <td><div class="td-content"><span class="discount-pricing">$47.09</span></div></td>
-                                                <td><div class="td-content">130</div></td>
-                                                <td><div class="td-content"><a href="javascript:void(0);" class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg> Google</a></div></td>
+                                                <td>
+                                                    <div class="td-content product-name"><img src="assets/img/product-shoes.jpg" alt="product">
+                                                        <div class="align-self-center">
+                                                            <p class="prd-name">Shoes</p>
+                                                            <p class="prd-category text-warning">Faishon</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="pricing">$108.09</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="discount-pricing">$47.09</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">130</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><a href="javascript:void(0);" class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
+                                                                <polyline points="13 17 18 12 13 7"></polyline>
+                                                                <polyline points="6 17 11 12 6 7"></polyline>
+                                                            </svg> Google</a></div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><div class="td-content product-name"><img src="assets/img/product-watch.jpg" alt="product"><div class="align-self-center"><p class="prd-name">Watch</p><p class="prd-category text-danger">Accessories</p></div></div></td>
-                                                <td><div class="td-content"><span class="pricing">$88.00</span></div></td>
-                                                <td><div class="td-content"><span class="discount-pricing">$20.00</span></div></td>
-                                                <td><div class="td-content">66</div></td>
-                                                <td><div class="td-content"><a href="javascript:void(0);" class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg> Ads</a></div></td>
+                                                <td>
+                                                    <div class="td-content product-name"><img src="assets/img/product-watch.jpg" alt="product">
+                                                        <div class="align-self-center">
+                                                            <p class="prd-name">Watch</p>
+                                                            <p class="prd-category text-danger">Accessories</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="pricing">$88.00</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="discount-pricing">$20.00</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">66</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><a href="javascript:void(0);" class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
+                                                                <polyline points="13 17 18 12 13 7"></polyline>
+                                                                <polyline points="6 17 11 12 6 7"></polyline>
+                                                            </svg> Ads</a></div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><div class="td-content product-name"><img src="assets/img/product-laptop.jpg" alt="product"><div class="align-self-center"><p class="prd-name">Laptop</p><p class="prd-category text-primary">Digital</p></div></div></td>
-                                                <td><div class="td-content"><span class="pricing">$110.00</span></div></td>
-                                                <td><div class="td-content"><span class="discount-pricing">$33.00</span></div></td>
-                                                <td><div class="td-content">35</div></td>
-                                                <td><div class="td-content"><a href="javascript:void(0);" class="text-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg> Email</a></div></td>
+                                                <td>
+                                                    <div class="td-content product-name"><img src="assets/img/product-laptop.jpg" alt="product">
+                                                        <div class="align-self-center">
+                                                            <p class="prd-name">Laptop</p>
+                                                            <p class="prd-category text-primary">Digital</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="pricing">$110.00</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="discount-pricing">$33.00</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">35</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><a href="javascript:void(0);" class="text-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
+                                                                <polyline points="13 17 18 12 13 7"></polyline>
+                                                                <polyline points="6 17 11 12 6 7"></polyline>
+                                                            </svg> Email</a></div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><div class="td-content product-name"><img src="assets/img/product-camera.jpg" alt="product"><div class="align-self-center"><p class="prd-name">Camera</p><p class="prd-category text-primary">Digital</p></div></div></td>
-                                                <td><div class="td-content"><span class="pricing">$126.04</span></div></td>
-                                                <td><div class="td-content"><span class="discount-pricing">$26.04</span></div></td>
-                                                <td><div class="td-content">30</div></td>
-                                                <td><div class="td-content"><a href="javascript:void(0);" class="text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg> Referral</a></div></td>
+                                                <td>
+                                                    <div class="td-content product-name"><img src="assets/img/product-camera.jpg" alt="product">
+                                                        <div class="align-self-center">
+                                                            <p class="prd-name">Camera</p>
+                                                            <p class="prd-category text-primary">Digital</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="pricing">$126.04</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="discount-pricing">$26.04</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">30</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><a href="javascript:void(0);" class="text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
+                                                                <polyline points="13 17 18 12 13 7"></polyline>
+                                                                <polyline points="6 17 11 12 6 7"></polyline>
+                                                            </svg> Referral</a></div>
+                                                </td>
                                             </tr>
 
 
@@ -734,7 +954,7 @@
                         </div>
                     </div>
 
-                    
+
 
                 </div>
 
@@ -768,4 +988,5 @@
 </body>
 
 <!-- Mirrored from designreset.com/cork/ltr/demo9/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jul 2021 05:12:40 GMT -->
+
 </html>
