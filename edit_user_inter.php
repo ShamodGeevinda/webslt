@@ -1,19 +1,27 @@
+<?php include './sessionstart.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- begin head -->
-<?php include 'head.php'; ?>
-<!-- end head -->
 
-<body class=" dashboard-sales">
+<?php include 'head.php' ?>
+
+<body class="dashboard-analytics">
+
     <!-- BEGIN LOADER -->
-    <div id="load_screen"> <div class="loader"> <div class="loader-content">
-        <div class="spinner-grow align-self-center"></div>
-    </div></div></div>
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
     <!--  END LOADER -->
 
     <!--  BEGIN NAVBAR  -->
-    <?php include 'header.php';?>
+    <div class="header-container fixed-top">
+        <?php include 'header.php' ?>
+    </div>
     <!--  END NAVBAR  -->
 
     <!--  BEGIN MAIN CONTAINER  -->
@@ -25,94 +33,101 @@
         <!--  BEGIN SIDEBAR  -->
         <?php include 'navbar.php'; ?>
         <!--  END SIDEBAR  -->
-        
+
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
-
                 <div class="page-header">
                     <nav class="breadcrumb-one" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">User</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Edit</a></li>
+                            <h3>Edit user</h3>
                         </ol>
                     </nav>
                 </div>
 
-                <div class="page-header">
-                        <nav class="breadcrumb-one" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <h3>Edit User </h3>
-                            </ol>
-                        </nav>
-                </div>
+                <table class="table table-hover non-hover dataTable no-footer">
+                    <thead>
+                        <tr>
 
-                <!--  BEGIN FORM AREA  -->
+                            <th>ID</th>
+                            <th>Emp No</th>
+                            <th>Type</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Contact No</th>
+                            <th>Email</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Status</th>
+                            <th class="text-center">Action</th>
 
-                <form action="data_insert_user.php" method="POST">
-                        <div class="form-row">
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault01">Emp No</label>
-                                <input type="text" class="form-control" id="validationDefault01" placeholder="Emp No" name="emp_no" required>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault02">Type</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="Type" name="type" required>
-                            </div>
 
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault02">First Name</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="First Name" name="first_name" required>
-                            </div>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $servername = "localhost";
+                        $username = "root";
+                        $password = "1234";
+                        $dbname = "slt";
 
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault01">Last Name</label>
-                                <input type="text" class="form-control" id="validationDefault01" placeholder="Last Name" name="last_name" required>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault02">Contact No</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="Contact No" name="contact_no" required>
-                            </div>
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+                        }
+                        $count = 1;
+                        $sql = "SELECT * FROM employee;";
+                        $result = mysqli_query($conn, $sql);
+                        //$result = $conn->query($sql);
 
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault02">Email</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="Email" name="email" required >
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault02">User Name</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="User Name" name="username" required>
-                            </div>
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while ($row = $result->fetch_assoc()) {
+                        ?>
 
-                            <div class="col-md-4 mb-4">
-                                <label for="validationDefault02">Password</label>
-                                <input type="password" class="form-control" id="validationDefault02" placeholder="Password" name="password" required >
-                            </div>
 
-                            
-                        </div>
-                        
-                        <div class="form-group mb-4">
-                            <div class="custom-control custom-checkbox checkbox-info">
-                                <input type="checkbox" class="custom-control-input" id="invalidCheck2" required>
-                                <label class="custom-control-label" for="invalidCheck2">Agree to submit form data</label>
-                                <div class="invalid-feedback">
-                                    Agree to submit form data
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary mt-3" type="submit">Edit User</button>
-                    </form>
+                                <tr>
 
-                    <!--  END FORM AREA  -->
+                                    <td><?php echo $row["id"]; ?></td>
+                                    <td><?php echo $row["emp_no"]; ?></td>
+                                    <td><?php echo $row["type"]; ?></td>
+                                    <td><?php echo $row["first_name"]; ?></td>
+                                    <td><?php echo $row["last_name"]; ?></td>
+                                    <td><?php echo $row["contact_no"]; ?></td>
+                                    <td><?php echo $row["email"]; ?></td>
+                                    <td><?php echo $row["username"]; ?></td>
+                                    <td><?php echo $row["password"]; ?></td>
+                                    <td><?php echo $row["status"]; ?></td>
+                                    <td class="text-center"><a href="edit_user_data.php?id=<?php echo $row["id"]; ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1">
+                                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                                            </svg></a></td>
 
+
+
+                                </tr>
+                        <?php
+                                $count++;
+                            }
+                        } else {
+                            echo "<h4>No Record to View</h3>";
+                        }
+                        $conn->close();
+                        ?>
+
+
+
+
+                    </tbody>
+                </table>
+
+
+                <?php include 'footer.php'; ?>
             </div>
-            <?php include 'footer.php'; ?>
         </div>
         <!--  END CONTENT AREA  -->
+
 
     </div>
     <!-- END MAIN CONTAINER -->
@@ -133,10 +148,11 @@
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
     <script src="plugins/apex/apexcharts.min.js"></script>
-    <script src="assets/js/dashboard/dash_2.js"></script>
+    <script src="assets/js/dashboard/dash_1.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
 </body>
 
-<!-- Mirrored from designreset.com/cork/ltr/demo9/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jul 2021 05:12:40 GMT -->
+
+
 </html>
