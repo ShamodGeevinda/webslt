@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password_err = "Please enter your password.";
   } else {
     $password = trim($_POST["password"]);
+    $password = md5($password);
   }
 
   // Validate credentials
@@ -111,11 +112,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <div class="wrap-input100 validate-input" data-validate="Enter username">
             <input class="input100" type="text" name="username" placeholder="Username" />
             <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            <?php
+            echo '<p class="text-danger">' . $username_err . '</p>'
+            ?>
           </div>
 
           <div class="wrap-input100 validate-input" data-validate="Enter password">
             <input class="input100" type="password" name="password" placeholder="Password" />
             <span class="focus-input100" data-placeholder="&#xf191;"></span>
+            <?php
+            echo '<p class="text-danger">' . $password_err . '</p>'
+            ?>
           </div>
 
           <div class="contact100-form-checkbox">

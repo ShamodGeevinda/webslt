@@ -12,8 +12,7 @@ $contact_no = $mysqli->real_escape_string($_REQUEST['contact_no']);
 $email = $mysqli->real_escape_string($_REQUEST['email']);
 $username = $mysqli->real_escape_string($_REQUEST['username']);
 $password = $mysqli->real_escape_string($_REQUEST['password']);
-
-
+$password = md5($password);
 
 
 // Attempt insert query execution
