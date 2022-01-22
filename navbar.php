@@ -196,7 +196,7 @@
         <div class="submenu" id="app">
             <ul class="submenu-list" data-parent-element="#app">
                 <li>
-                    <a href="apps_chat.html"> Chat </a>
+                    <a href="insert_slt_inter.php"> Inflow </a>
                 </li>
                 <li>
                     <a href="apps_mailbox.html"> Mailbox </a>
