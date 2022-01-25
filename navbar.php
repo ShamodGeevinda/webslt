@@ -199,7 +199,7 @@
                     <a href="insert_slt_inter.php"> Inflow </a>
                 </li>
                 <li>
-                    <a href="apps_mailbox.html"> Mailbox </a>
+                    <a href="repair_center.php"> Repair center </a>
                 </li>
                 <li>
                     <a href="apps_todoList.html"> Todo List </a>
